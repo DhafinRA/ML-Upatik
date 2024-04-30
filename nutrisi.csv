@@ -1,0 +1,14 @@
+﻿id,Nama Makanan,Kalori,Protein,Lemak,Karbohidrat,Kategori
+M-001,Ayam Bakar,242,30,14,10,Daging
+M-002,Ayam Geprek,240,24,15,12,Daging
+M-003,Ayam Goreng,230,23.5,12.4,6,Daging
+M-004,Ayam Tepung,291,15.59,18.82,"16,32",Daging
+M-005,Bakso,200,15,10,15,Serealia
+M-006,Chicken Katsu,290,30,16,3,Daging
+M-007,Telur Balado,142,7.1,11.5,2.44,
+M-008,Mie Ayam,102,6.2,3.9,10.5,Serealia
+M-009,Mie Instan,350,8,12,52,
+M-010,Nasi Goreng,250,9.39,9.28,31.38,
+M-011,Pecel Lele,292,23.06,17.22,11.9,
+M-012,Sop,27,1.3,2,1,Sayur
+M-013,Soto,150,12,6,15,Daging
