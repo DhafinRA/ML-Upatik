@@ -34,8 +34,8 @@ def predict(img_path,model):
     # otherwise, it won't make correct prediction!
     x = preprocess_input(x)
 
-    preds = model.predict(x)
-    return preds
+    # preds = model.predict(x)
+    return x.shape
 
 if __name__ == "__main__":
     app.run(debug=True)
