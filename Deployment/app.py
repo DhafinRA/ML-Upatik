@@ -15,27 +15,23 @@ from werkzeug.utils import secure_filename
 from gevent.pywsgi import WSGIServer
 
 app = Flask(__name__)
-model = pickle.load(open('model.pkl', 'rb'))
+model = load_model('foodnutritio_baru.h5')
 
 @app.route('/')
 def home():
     return render_template('index.html')
 
 @app.route('/predict',methods=['POST'])
-def predict(img_path,model):
-    img = load_img(img_path, target_size=(224, 224))
+def predict(img_path):
+    data = request.get_json()
+    image_url = data['image_url']
 
-    # Preprocessing the image
-    x = img_to_array(img)
-    # x = np.true_divide(x, 255)
-    x = np.expand_dims(x, axis=0)
-
-    # Be careful how your trained model deals with the input
-    # otherwise, it won't make correct prediction!
-    x = preprocess_input(x)
+    # Assuming preprocessed_image_from_url is defined somewhere
+    preprocessed_image = preprocessed_image_from_url(image_url)
+    prediction = model.predict(preprocessed_image)
 
     # preds = model.predict(x)
-    return x.shape
+    return f"prediction:{np.argmax(x[0])}"
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -1,17 +1,22 @@
-import os
-from keras.models import load_model
-from flask import Flask, request, jsonify
+import numpy as np
+import pandas as pd
+from flask import Flask, request, render_template
+from sklearn import preprocessing
 import pickle
 
-#model_image_path = os.path.join('.', 'foodnutrition.h5')
-#model_image = load_model(model_image_path)
+# Keras
+from keras.applications.imagenet_utils import preprocess_input, decode_predictions
+from keras.models import load_model
+from keras.preprocessing.image import load_img,img_to_array
 
-#with open('foodnutrition.pkl','rb') as f:
-    #model = pickle.load(f)
+# Flask utils
+from flask import Flask, redirect, url_for, request, render_template
+from werkzeug.utils import secure_filename
+#from gevent.pywsgi import WSGIServer
 
+app = Flask(__name__)
 model = pickle.load(open('foodnutrition.pkl', 'rb'))
 
-flask_app = Flask(__name__)
 
 @app.route('/images', methods=['POST'])
 def image_predict():
@@ -20,7 +25,7 @@ def image_predict():
 
     # Assuming preprocessed_image_from_url is defined somewhere
     preprocessed_image = preprocessed_image_from_url(image_url)
-    prediction = model_image.predict(preprocessed_image)
+    prediction = model.predict(preprocessed_image)
 
     return jsonify({'prediction': prediction.tolist()})
 
