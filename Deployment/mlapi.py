@@ -7,15 +7,21 @@ import pickle
 import os
 import pandas as pd
 <<<<<<< HEAD
+<<<<<<< HEAD
 #os.system("cls")
 app = FastAPI()
 
 with open('foodnutrition.pkl','rb') as f:
 =======
+=======
+>>>>>>> a900ff1afc5c0ec2e569e1cc957b6c59e455ae2a
 os.system("cls")
 app = FastAPI()
 
 with open('foodXception.pkl','rb') as f:
+<<<<<<< HEAD
+>>>>>>> a900ff1afc5c0ec2e569e1cc957b6c59e455ae2a
+=======
 >>>>>>> a900ff1afc5c0ec2e569e1cc957b6c59e455ae2a
     model = pickle.load(f)
 
@@ -43,12 +49,18 @@ async def predict(file: UploadFile = File(...)):
   
     # return f"Prediction : {np.argmax(preds[0])}"
 <<<<<<< HEAD
+<<<<<<< HEAD
     return {"Prediction" : int(np.argmax(preds[0]))}
 =======
+=======
+>>>>>>> a900ff1afc5c0ec2e569e1cc957b6c59e455ae2a
     return {"Prediction" : int(np.argmax(preds[0])),
             "Kalori" : int(Kalori),
             "Protein" : Protein,
             "Lemak" : Lemak}
+<<<<<<< HEAD
+>>>>>>> a900ff1afc5c0ec2e569e1cc957b6c59e455ae2a
+=======
 >>>>>>> a900ff1afc5c0ec2e569e1cc957b6c59e455ae2a
 # img = PIL.Image.open(io.BytesIO(img)).convert('RGB')
 # img = img.resize(size=(224,224))
