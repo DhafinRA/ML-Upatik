@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Nama Makanan;Kalori;Lemak;Karbohidrat;Protein;Kategori,,,,
 Ayam Bakar;201;11,46g;0g;23,01g;Daging, Ayam,
 Ayam Geprek;789;53,97g;22,81g;52,82g;Daging, Ayam
@@ -17,3 +18,24 @@ Sate Ayam;101;6,67g;2,19g;8,79g;Daging, Ayam
 Sop;72;1,93g;11,98g;2,12g;Sayur,
 Soto;312;14,92g;19,55g;24,01g;Sayur,
 Telur Balado;142;11.5g;2.44g;7.1g;Ayam,,,,
+=======
+Nama_makanan,Kalori,Lemak,Karbohidrat,Protein,Kategori
+Ayam Bakar,201,11.46g,0g,23.01g,"Daging, Ayam"
+Ayam Geprek,789,53.97g,22.81g,5.82g,"Daging, Ayam"
+Ayam Goreng,230,12.4g,6g,23.5g,"Daging, Ayam"
+Ayam Tepung,291,18.82g,16.32g,15.59g,"Daging, Ayam"
+Bakso,225,7.87g,9.71g,27.15g,Serealia
+Chicken Katsu,297,18.82g,16.32g,15.59g,"Daging, Ayam"
+Donat,426,22.9g,50.8g,5.2g,Serealia
+Gado-gado,318,17.86g,26.28g,17.22g,Sayur
+Kopi,29,0.01g,7.12g,0.19g,Minuman
+Mie Ayam,421,18.74g,46.21g,16.7g,"Serealia, Ayam"
+Mie Instan,350,12g,52g,8g,Serealia
+Nasi Goreng,250,9.28g,31.38g,9.39g,Serealia
+Pecel Lele,292,17.22g,11.9g,23.06g,Ikan
+Rendang,468,26.57g,10.78g,47.23g,Daging
+Sate,101,6.67g,2.19g,8.79g,"Daging, Ayam"
+Sop,72,1.93g,11.98g,2.12g,Sayur
+Soto,312,14.92g,19.55g,24.01g,Sayur
+Telur Balado,142,11.5g,2.44g,7.1g,Ayam
+>>>>>>> 9076ac309b78afa942a74886fdf4852372be1468
